@@ -9,3 +9,5 @@ export const secondaryFontColor = '#AFAFAF';
 export const thirdFontColor = '#2F281E';
 export const fourthFontColor = '#737373';
 export const userRoleColor = '#252B42';
+export const whiteColor = '#ffffff';
+export const greenColor = '#BCD0E5';

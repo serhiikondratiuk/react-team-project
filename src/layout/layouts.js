@@ -5,5 +5,7 @@ export function getStyles(params) {
     userRoleColor: colors.userRoleColor,
     userNameColor: colors.accentColor,
     accentColor: colors.accentColor,
+    whiteColor: colors.whiteColor,
+    greenColor: colors.greenColor,
   };
 }

@@ -1,6 +1,7 @@
 import Icon from '../../components/Icon';
 import { getStyles } from '../../layout/layouts';
 import styled from 'styled-components';
+import { Button } from '../../components/Button';
 const styles = getStyles();
 
 const VideoLink = styled.a`
@@ -21,7 +22,9 @@ const Home = params => {
         most intuitive way to imagine your next user experience.
       </p>
       <div>
-        <button type="button">Get started</button>
+        <Button btnType="bright" type="button">
+          Get started
+        </Button>
         <VideoLink href="/">
           <Icon
             fill={styles.accentColor}
