@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from '../Button';
 
 const Navigation = () => {
   return (
@@ -19,10 +20,14 @@ const Navigation = () => {
       </ul>
       <ul>
         <li>
-          <button type="button">Sign In</button>
+          <Button btnType="light" type="button">
+            Sign In
+          </Button>
         </li>
         <li>
-          <button type="button">Sign Up</button>
+          <Button btnType="bright" type="button">
+            Sign Up
+          </Button>
         </li>
       </ul>
       <input type="checkbox" />

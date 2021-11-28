@@ -21,6 +21,7 @@ Icon.defaultProps = {
   fill: '#000000',
   stroke: 'inherit',
   iconName: '',
+  className: '',
 };
 
 Icon.propTypes = {

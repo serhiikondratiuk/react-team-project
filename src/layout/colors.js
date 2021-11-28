@@ -1,0 +1,13 @@
+export const accentColor = '#02897A';
+export const blueColor = '#4D8DFF';
+export const purpleColor = '#740A76';
+export const redColor = '#F03E3D';
+export const orangeColor = '#FF9900';
+export const yellowColor = '#F3CD03';
+export const mainFontColor = '#22343D';
+export const secondaryFontColor = '#AFAFAF';
+export const thirdFontColor = '#2F281E';
+export const fourthFontColor = '#737373';
+export const userRoleColor = '#252B42';
+export const whiteColor = '#ffffff';
+export const greenColor = '#BCD0E5';
