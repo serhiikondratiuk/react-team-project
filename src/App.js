@@ -12,11 +12,11 @@ function App() {
         <Logo children="Product" />
         <Navigation />
       </Container>
-      <Container>
-        <Section>
+      <Section>
+        <Container>
           <Home />
-        </Section>
-      </Container>
+        </Container>
+      </Section>
     </>
   );
 }
