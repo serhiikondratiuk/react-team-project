@@ -34,7 +34,6 @@ const DefaultButton = styled.button`
         : buttonTypes['light'].color};
   }
 `;
-
 export function Button({ children, btnType }) {
   return <DefaultButton btnType={btnType}>{children}</DefaultButton>;
 }

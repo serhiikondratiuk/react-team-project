@@ -1,4 +1,5 @@
 import './App.css';
+import Container from './components/base/Container/Container';
 import Logo from './components/Logo/Logo';
 import Navigation from './components/Navigation/Navigation';
 import Home from './pages/Home/Home';
@@ -6,9 +7,13 @@ import Home from './pages/Home/Home';
 function App() {
   return (
     <>
-      <Logo children="Product" />
-      <Navigation />
-      <Home />
+      <Container>
+        <Logo children="Product" />
+        <Navigation />
+      </Container>
+      <Container>
+        <Home />
+      </Container>
     </>
   );
 }
