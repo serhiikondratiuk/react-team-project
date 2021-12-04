@@ -2,6 +2,9 @@ import React from 'react';
 import Logo from '../Logo/Logo';
 import styled from 'styled-components';
 import Icon from '../Icon';
+import Form from '../Form/Form';
+import { getStyles } from '../../layout/layouts';
+const styles = getStyles();
 
 const FooterNav = styled.nav`
   display: flex;
@@ -32,10 +35,16 @@ const Link = styled.a`
   font-size: 16px;
   line-height: 2.19;
   text-decoration: none;
+  color: ${styles.mainFontColor};
 `;
 // шрифт временно
 
 const ListWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const FormWrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;
@@ -98,8 +107,14 @@ const FooterBottomPart = () => {
             ))}
           </List>
         </ListWrapper>
-        <form></form>
-        {/* вынести форму в отдельный компонет */}
+        <FormWrapper>
+          <h2>
+            knowing you're always on <br />
+            the best energy deal.
+          </h2>
+          {/* поставить компонет H*, <br/ временно> */}
+          <Form />
+        </FormWrapper>
       </FooterNav>
       <FooterText>Made With Love By Figmaland All Right Reserved</FooterText>
     </footer>
