@@ -5,6 +5,7 @@ import Logo from './components/Logo/Logo';
 import Navigation from './components/Navigation/Navigation';
 import Home from './pages/Home/Home';
 import FooterBottomPart from './components/Footer/Footer';
+import CustomerSupport from './pages/customerSupport/';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Container>
         <FooterBottomPart />
       </Container>
+      <CustomerSupport />
     </>
   );
 }
