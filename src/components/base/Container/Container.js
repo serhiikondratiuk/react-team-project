@@ -10,14 +10,15 @@ const ContainerWrapper = styled.div`
     padding-left: 40px;
     padding-right: 40px;
   }
+
   @media screen and (min-width: 1024px) {
     padding-left: 145px;
     padding-right: 145px;
   }
 `;
 
-const Container = ({ children }) => {
-  return <ContainerWrapper>{children}</ContainerWrapper>;
+const Container = ({ className, children }) => {
+  return <ContainerWrapper className={className}>{children}</ContainerWrapper>;
 };
 
 Container.propTypes = {
