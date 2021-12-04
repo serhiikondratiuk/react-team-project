@@ -19,10 +19,10 @@ function App() {
           <Home />
         </Container>
       </Section>
+      <CustomerSupport />
       <Container>
         <FooterBottomPart />
       </Container>
-      <CustomerSupport />
     </>
   );
 }
