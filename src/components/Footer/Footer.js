@@ -1,11 +1,25 @@
 import React from 'react';
 import Logo from '../Logo/Logo';
 import styled from 'styled-components';
+import Icon from '../Icon';
 
 const FooterNav = styled.nav`
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+`;
+
+const LogoIconsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 94px;
+`;
+
+const Icons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
 `;
 
 const List = styled.ul`
@@ -19,6 +33,7 @@ const Link = styled.a`
   line-height: 2.19;
   text-decoration: none;
 `;
+// шрифт временно
 
 const ListWrapper = styled.div`
   display: flex;
@@ -32,6 +47,7 @@ const FooterText = styled.p`
   text-align: center;
   margin-bottom: 46px;
 `;
+// шрифт временно
 
 const ResourceList = [
   { name: 'About us', href: '/' },
@@ -51,8 +67,14 @@ const FooterBottomPart = () => {
   return (
     <footer>
       <FooterNav>
-        <Logo children="Product" />
-        {/* иконки соцсетей*/}
+        <LogoIconsWrapper>
+          <Logo children="Product" />
+          <Icons>
+            <Icon iconName="instagram" width="40" height="40" />
+            <Icon iconName="facebook" width="40" height="40" />
+            <Icon iconName="twitter" width="40" height="40" />
+          </Icons>
+        </LogoIconsWrapper>
         <ListWrapper>
           <h2>Resource</h2>
           {/* поставить компонет H */}
