@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 import FooterBottomPart from './components/Footer/Footer';
 import CustomerSupport from './pages/customerSupport/';
 import FeaturesList from './pages/Features';
+import CollaborativeSection from './pages/Collaborative/Collaborative'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       </Section>
       <FeaturesList />
       <CustomerSupport />
+      <CollaborativeSection />
       <Container>
         <FooterBottomPart />
       </Container>
