@@ -11,7 +11,7 @@ const SectionTitle = styled.h2`
   color: ${styles.mainFontColor};
 `;
 
-const Title = title => {
+const Title = ({ title }) => {
   return <SectionTitle>{title}</SectionTitle>;
 };
 

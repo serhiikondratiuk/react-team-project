@@ -12,8 +12,9 @@ const ContainerWrapper = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    padding-left: 145px;
-    padding-right: 145px;
+    width: 1150px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 `;
 
