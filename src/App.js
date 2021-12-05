@@ -1,21 +1,16 @@
-import './App.css';
 import Container from './components/base/Container';
 import Section from './components/base/Section';
-import Logo from './components/Logo/Logo';
-import Navigation from './components/Navigation/Navigation';
+import Header from './pages/Header/Header';
 import Home from './pages/Home/Home';
 import FooterBottomPart from './components/Footer/Footer';
 import CustomerSupport from './pages/customerSupport/';
 import FeaturesList from './pages/Features';
-import CollaborativeSection from './pages/Collaborative/Collaborative'
+import CollaborativeSection from './pages/Collaborative/Collaborative';
 
 function App() {
   return (
     <>
-      <Container>
-        <Logo children="Product" />
-        <Navigation />
-      </Container>
+      <Header />
       <Section>
         <Container>
           <Home />
