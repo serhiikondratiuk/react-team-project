@@ -3,6 +3,7 @@ import Logo from '../Logo/Logo';
 import styled from 'styled-components';
 import Icon from '../Icon';
 import Form from '../Form/Form';
+import Advertising from './Advertising';
 import { getStyles } from '../../layout/layouts';
 const styles = getStyles();
 
@@ -75,6 +76,7 @@ const LegalStuffList = [
 const FooterBottomPart = () => {
   return (
     <footer>
+      <Advertising />
       <FooterNav>
         <LogoIconsWrapper>
           <Logo children="Product" />
