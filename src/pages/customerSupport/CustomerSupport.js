@@ -2,7 +2,7 @@ import React from 'react';
 import './CustomerSupport.css';
 // import PropTypes from 'prop-types';
 // import Icon from '../../components/Icon';
-import Container from '../../components/base/Container/Container';
+import Container from '../../components/base/Container';
 import styled from 'styled-components';
 // import SVGcheked from '../../img/svg/checked.svg'
 

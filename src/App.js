@@ -1,9 +1,10 @@
-import Container from './components/base/Container/Container';
-import Section from './components/base/Section/Section';
+import Container from './components/base/Container';
+import Section from './components/base/Section';
 import Header from './pages/Header/Header';
 import Home from './pages/Home/Home';
 import FooterBottomPart from './components/Footer/Footer';
 import CustomerSupport from './pages/customerSupport/';
+import FeaturesList from './pages/Features';
 import CollaborativeSection from './pages/Collaborative/Collaborative';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Home />
         </Container>
       </Section>
+      <FeaturesList />
       <CustomerSupport />
       <CollaborativeSection />
       <Container>
