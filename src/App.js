@@ -1,4 +1,3 @@
-import './App.css';
 import Container from './components/base/Container/Container';
 import Section from './components/base/Section/Section';
 import Logo from './components/Logo/Logo';
