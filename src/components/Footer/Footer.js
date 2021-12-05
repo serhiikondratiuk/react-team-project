@@ -120,7 +120,7 @@ const FooterBottomPart = () => {
             knowing you're always on <br />
             the best energy deal.
           </h2>
-          {/* поставить компонет H*, <br/ временно> */}
+          {/* поставить компонет H*, <br/ временно, потом удалить> */}
           <Form />
         </Wrapper>
       </FooterNav>
