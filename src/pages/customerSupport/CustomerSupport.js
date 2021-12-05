@@ -9,6 +9,11 @@ import styled from 'styled-components';
 const CustomerSection = styled.section`
   padding-top: 75px;
   padding-bottom: 75px;
+
+  background: url(${require('../../img/customer-support/amico.png').default});
+  background-repeat: no-repeat;
+  background-position: 145px center;
+  background-size: 543px 500px;
 `;
 
 const Wrapper = styled.div`
@@ -76,7 +81,7 @@ const ListItem = styled.li`
     width: 30px;
     border-radius: 14px;
 
-    background-image: url(../../img/svg/checked.svg);
+    background-image: url(${require('../../img/svg/checked.svg').default});
     background-repeat: no-repeat;
     background-position: center;
     background-size: 16px 12px;
