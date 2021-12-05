@@ -1,7 +1,7 @@
 import Icon from '../../components/Icon';
 import Container from '../../components/base/Container';
 // import Title from '../../components/base/Title';
-import { Button } from '../../components/Button';
+import { DefaultButton } from '../../components/Button';
 import styled from 'styled-components';
 import { getStyles } from '../../layout/layouts';
 const styles = getStyles();
@@ -56,11 +56,10 @@ const FeatureHeader = styled.h3`
   margin-bottom: 13px;
 `;
 
-// const Button = styled.button`
-//   display: block;
-//   margin: 0 auto;
-// `;
-// как дописывать стили в компоненты
+const ButtonSignUp = styled(DefaultButton)`
+  display: block;
+  margin: 0 auto;
+`;
 
 const FeaturesList = () => {
   return (
@@ -118,7 +117,7 @@ const FeaturesList = () => {
             <p>Personal choices and the overall personality of the person.</p>
           </FeatureItem>
         </List>
-        <Button btnType="bright">SIGN UP NOW</Button>
+        <ButtonSignUp btnType="bright">SIGN UP NOW</ButtonSignUp>
       </Container>
     </>
   );
