@@ -15,7 +15,7 @@ const buttonTypes = {
   },
 };
 
-const DefaultButton = styled.button`
+export const DefaultButton = styled.button`
   padding: 14px 40px;
   background-color: ${({ btnType }) => buttonTypes[btnType].background};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
