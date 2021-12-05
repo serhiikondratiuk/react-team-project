@@ -4,8 +4,13 @@ import styled from 'styled-components';
 import Icon from '../Icon';
 import Form from '../Form/Form';
 import Advertising from './Advertising';
+import Container from '../base/Container/Container';
 import { getStyles } from '../../layout/layouts';
 const styles = getStyles();
+
+const Footer = styled.footer`
+  max-width: 1110px;
+`;
 
 const FooterNav = styled.nav`
   display: flex;
@@ -18,6 +23,7 @@ const LogoIconsWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 94px;
+  margin-right: 150px;
 `;
 
 const Icons = styled.div`
@@ -29,6 +35,7 @@ const Icons = styled.div`
 const List = styled.ul`
   list-style: none;
   padding-left: 0;
+  margin-right: 100px;
 `;
 
 const Link = styled.a`
@@ -40,15 +47,15 @@ const Link = styled.a`
 `;
 // шрифт временно
 
-const ListWrapper = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-const FormWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+// const Wrapper = styled.div`
+//   display: flex;
+//   flex-direction: column;
+// `;
 
 const FooterText = styled.p`
   font-family: Arial;
@@ -75,7 +82,7 @@ const LegalStuffList = [
 
 const FooterBottomPart = () => {
   return (
-    <footer>
+    <Footer>
       <Advertising />
       <FooterNav>
         <LogoIconsWrapper>
@@ -86,10 +93,9 @@ const FooterBottomPart = () => {
             <Icon iconName="twitter" width="40" height="40" />
           </Icons>
         </LogoIconsWrapper>
-        <ListWrapper>
+        <Wrapper>
           <h2>Resource</h2>
           {/* поставить компонет H */}
-
           <List>
             {ResourceList.map(item => (
               <li key={item.name}>
@@ -97,8 +103,8 @@ const FooterBottomPart = () => {
               </li>
             ))}
           </List>
-        </ListWrapper>
-        <ListWrapper>
+        </Wrapper>
+        <Wrapper>
           <h2>Legal Stuff</h2>
           {/* поставить компонет H*/}
           <List>
@@ -108,18 +114,18 @@ const FooterBottomPart = () => {
               </li>
             ))}
           </List>
-        </ListWrapper>
-        <FormWrapper>
+        </Wrapper>
+        <Wrapper>
           <h2>
             knowing you're always on <br />
             the best energy deal.
           </h2>
-          {/* поставить компонет H*, <br/ временно> */}
+          {/* поставить компонет H*, <br/ временно, потом удалить> */}
           <Form />
-        </FormWrapper>
+        </Wrapper>
       </FooterNav>
       <FooterText>Made With Love By Figmaland All Right Reserved</FooterText>
-    </footer>
+    </Footer>
   );
 };
 
