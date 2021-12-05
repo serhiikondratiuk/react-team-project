@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button } from '../Button';
 
 const Navigation = () => {
@@ -25,7 +24,7 @@ const Navigation = () => {
           </Button>
         </li>
         <li>
-          <Button btnType="bright" type="button">
+          <Button btnType="light" type="button">
             Sign Up
           </Button>
         </li>
