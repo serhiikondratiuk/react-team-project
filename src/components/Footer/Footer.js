@@ -8,6 +8,10 @@ import Container from '../base/Container/Container';
 import { getStyles } from '../../layout/layouts';
 const styles = getStyles();
 
+const Footer = styled.footer`
+  max-width: 1110px;
+`;
+
 const FooterNav = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -78,7 +82,7 @@ const LegalStuffList = [
 
 const FooterBottomPart = () => {
   return (
-    <footer>
+    <Footer>
       <Advertising />
       <FooterNav>
         <LogoIconsWrapper>
@@ -121,7 +125,7 @@ const FooterBottomPart = () => {
         </Wrapper>
       </FooterNav>
       <FooterText>Made With Love By Figmaland All Right Reserved</FooterText>
-    </footer>
+    </Footer>
   );
 };
 
