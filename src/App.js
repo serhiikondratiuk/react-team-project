@@ -6,6 +6,7 @@ import FooterBottomPart from './components/Footer/Footer';
 import CustomerSupport from './pages/customerSupport/';
 import FeaturesList from './pages/Features';
 import CollaborativeSection from './pages/Collaborative/Collaborative';
+import ContactExpert from './pages/ContactExpert/ContactExpert';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         </Container>
       </Section>
       <FeaturesList />
+      <ContactExpert />
       <CustomerSupport />
       <CollaborativeSection />
       <Container>
